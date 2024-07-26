@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'functions.dart';
-
 void main() => runApp(MeuApp());
 
 class MeuApp extends StatelessWidget {
@@ -23,7 +21,7 @@ class MeuApp extends StatelessWidget {
 
 class Exemplo extends StatelessWidget {
   const Exemplo({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(
