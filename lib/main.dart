@@ -40,7 +40,7 @@ class MeuApp extends StatelessWidget {
                   child: Container(
                     width: 100,
                     height: 100,
-                    color: Colors.purple,
+                    color: Colors.blue,
                   ),
                 ) 
               ],
