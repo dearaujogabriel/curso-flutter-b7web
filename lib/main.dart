@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'exemplo.dart';
+
 void main() => runApp(MeuApp());
 
 class MeuApp extends StatelessWidget {
@@ -11,23 +13,23 @@ class MeuApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Meu primeiro App"),
         ),
-        body: const Center(
-          child: Exemplo()
+        body: Column(
+          children: [
+            Exemplo(
+              title: "Texto 1",
+              onPress: () {
+                print("Clicou no botao 1");
+              },
+            ),
+            Exemplo(
+              title: "Texto 2",
+              onPress: () {
+                print("Clicou no botao 2");
+              },
+            )
+          ],
         ),
       ),
-    );
-  }
-}
-
-class Exemplo extends StatelessWidget {
-  const Exemplo({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 200,
-      color: Colors.red,
     );
   }
 }
