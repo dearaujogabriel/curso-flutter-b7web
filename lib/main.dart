@@ -4,6 +4,8 @@ import 'functions.dart';
 void main() => runApp(MeuApp());
 
 class MeuApp extends StatelessWidget {
+  const MeuApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,17 +14,22 @@ class MeuApp extends StatelessWidget {
           title: const Text("Meu primeiro App"),
         ),
         body: const Center(
-          child: Column(
-            children: <Widget>[
-              Text("Clique no botão abaixo"),
-              TextButton(
-                onPressed: botaoAction,
-                child: Text("Clique aqui"),
-              ),
-            ],
-          ),
+          child: Exemplo()
         ),
       ),
+    );
+  }
+}
+
+class Exemplo extends StatelessWidget {
+  const Exemplo({super.key});
+  
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 200,
+      height: 200,
+      color: Colors.red,
     );
   }
 }
